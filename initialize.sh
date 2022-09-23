@@ -47,3 +47,8 @@ nvm install v16
 # install vscode
 brew install --cask visual-studio-code
 
+# install pritunl
+brew install --cask pritunl
+
+# install authy
+brew install --cask authy
