@@ -52,3 +52,6 @@ brew install --cask pritunl
 
 # install authy
 brew install --cask authy
+
+# install datagrip
+brew install --cask datagrip
