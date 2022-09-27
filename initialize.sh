@@ -55,3 +55,6 @@ brew install --cask authy
 
 # install datagrip
 brew install --cask datagrip
+
+# install cron
+brew install --cask cron
