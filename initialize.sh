@@ -58,3 +58,6 @@ brew install --cask datagrip
 
 # install cron
 brew install --cask cron
+
+# install postman
+brew install --cask postman
