@@ -67,3 +67,6 @@ curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 sudo installer -pkg ./AWSCLIV2.pkg -target /
 # 설치 경로 확인: which aws
 # 버전 확인: aws --version
+
+# install mysql
+brew install mysql-client@5.7
