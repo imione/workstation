@@ -70,3 +70,6 @@ sudo installer -pkg ./AWSCLIV2.pkg -target /
 
 # install mysql
 brew install mysql-client@5.7
+
+# install figma
+brew install --cask figma
