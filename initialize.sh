@@ -73,3 +73,6 @@ brew install mysql-client@5.7
 
 # install figma
 brew install --cask figma
+
+# install obsidian
+brew install --cask obsidian
