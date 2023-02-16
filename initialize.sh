@@ -76,3 +76,6 @@ brew install --cask figma
 
 # install obsidian
 brew install --cask obsidian
+
+# install commitizen
+brew install commitizen
