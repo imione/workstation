@@ -56,6 +56,9 @@ brew install --cask authy
 # install datagrip
 brew install --cask datagrip
 
+# install intelliJ idea
+brew install --cask intellij-idea
+
 # install cron
 brew install --cask cron
 
