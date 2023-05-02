@@ -82,3 +82,6 @@ brew install --cask obsidian
 
 # install commitizen
 brew install commitizen
+
+# install intellij idea
+brew install --cask intellij-idea-ce
