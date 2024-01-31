@@ -85,3 +85,9 @@ brew install commitizen
 
 # install intellij idea
 brew install --cask intellij-idea-ce
+
+brew install --cask redisinsight
+
+brew install --cask arc
+
+brew install --cask rectangle
