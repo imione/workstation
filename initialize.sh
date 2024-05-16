@@ -83,3 +83,5 @@ brew install commitizen
 brew install --cask arc
 
 brew install --cask rectangle
+
+brew install --cask chatgpt
