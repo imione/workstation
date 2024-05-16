@@ -4,8 +4,6 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/gimsuhyeon/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew help
 
-# install text editor
-brew install --cask sublime-text
 
 # install slack
 brew install --cask slack
@@ -16,8 +14,6 @@ brew install --cask iterm2
 # install 1password
 brew install --cask 1password
 
-# install notion
-brew install --cask notion
 
 # install zsh
 brew install zsh
@@ -43,21 +39,24 @@ export NVM_DIR="$HOME/.nvm"
 brew install nvm
 nvm install v16
 
+# install Text Editors
+# -- sublime text
+brew install --cask sublime-text
+# -- notion
+brew install --cask notion
+# -- obsidian
+brew install --cask obsidian
 
-# install vscode
+
+# install IDE
+# -- VSCode
 brew install --cask visual-studio-code
-
-# install pritunl
-brew install --cask pritunl
-
-# install authy
-brew install --cask authy
-
-# install datagrip
+# -- datagrip
 brew install --cask datagrip
-
-# install intelliJ idea
-brew install --cask intellij-idea
+# -- intelliJ idea (CE)
+brew install --cask intellij-idea-ce
+# -- Redis insight
+brew install --cask redisinsight
 
 # install cron
 brew install --cask cron
@@ -77,16 +76,9 @@ brew install mysql-client@5.7
 # install figma
 brew install --cask figma
 
-# install obsidian
-brew install --cask obsidian
-
 # install commitizen
 brew install commitizen
 
-# install intellij idea
-brew install --cask intellij-idea-ce
-
-brew install --cask redisinsight
 
 brew install --cask arc
 
