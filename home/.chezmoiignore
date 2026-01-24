@@ -1,0 +1,22 @@
+# OS specific - only apply on macOS
+{{ if ne .chezmoi.os "darwin" }}
+.chezmoiscripts/run_once_*
+{{ end }}
+
+# Sensitive files
+.ssh/id_*
+.ssh/known_hosts
+.aws/credentials
+
+# Local overrides
+.claude/settings.local.json
+**/.claude/settings.local.json
+
+# Cache and temp files
+.cache/
+.local/state/
+**/*.log
+**/*.swp
+
+# macOS specific
+.DS_Store

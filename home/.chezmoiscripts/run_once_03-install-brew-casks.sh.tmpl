@@ -1,0 +1,48 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+echo "Installing Homebrew casks (GUI apps)..."
+
+brew bundle --no-lock --file=/dev/stdin <<EOF
+# Terminal
+cask "iterm2"
+
+# Browsers
+cask "arc"
+
+# Communication
+cask "slack"
+
+# Productivity
+cask "notion"
+cask "obsidian"
+cask "1password"
+cask "rectangle"
+cask "cron"
+
+# Editors & IDEs
+cask "visual-studio-code"
+cask "sublime-text"
+{{ if .personal -}}
+cask "intellij-idea-ce"
+{{- else -}}
+cask "intellij-idea"
+{{- end }}
+cask "datagrip"
+cask "redisinsight"
+
+# Development
+cask "postman"
+cask "figma"
+
+# AI
+cask "chatgpt"
+
+{{ if .work -}}
+# Work-specific apps
+cask "orbstack"
+{{- end }}
+EOF
+
+echo "Homebrew casks installation complete!"
+{{- end -}}

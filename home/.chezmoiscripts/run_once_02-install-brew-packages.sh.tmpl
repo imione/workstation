@@ -1,0 +1,25 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+echo "Installing Homebrew packages..."
+
+brew bundle --no-lock --file=/dev/stdin <<EOF
+# Shell
+brew "zsh"
+brew "zsh-syntax-highlighting"
+brew "zsh-autocomplete"
+
+# Development tools
+brew "git"
+brew "commitizen"
+brew "fnm"
+brew "mysql-client@5.7"
+
+{{ if .work -}}
+# Work-specific packages
+brew "awscli"
+{{- end }}
+EOF
+
+echo "Homebrew packages installation complete!"
+{{- end -}}
